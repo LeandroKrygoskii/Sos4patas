@@ -1,16 +1,16 @@
 .container {
-    background: linear-gradient(90deg, rgb(48, 108, 112) 8%, rgb(106, 168, 192) 50%, rgb(90, 117, 121) 92%);
-    height: 220px;
-    width: 150px;
-    border: 1px solid #1495ff;
+    
+    height: 200px;
+    width: 270px;
     border-radius: 12px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5px 5px;
+    flex-direction: row;
+    
+    
+    padding: 5px 0px;
     margin: 10px;
     
-}
+} 
 .container:hover{
     cursor: pointer;
     transition: 0.7s ease;
@@ -18,25 +18,48 @@
 }
 
 .imgCard{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   width: 100%;
+ 
+  height: 200px;
   
-  object-fit: fill;
 }
 
 .image{
     width: 100%;
     height: 100%;
+   
+    object-fit: cover;
     
     border-radius: 10px;
 }
 .cardContent{
- text-align: center;
- margin-bottom: 60px;
+ 
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+max-width: 40%;
+ padding: 10px;
+}
+
+.typeHelp{
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-right: 10px;
+  height: 15px;
+  padding: 5px;
+  letter-spacing: 3px;
 }
 
 .cardTitle{
  font-weight: bold;
- color: #371b57;
+ color: #fff;
  margin-top: 10px;
  
 }
@@ -45,11 +68,11 @@
  font-size: 11px;
  color: #ffff;
  margin-top: 5px;
- text-align: center;
+ 
 }
 
 .linkCard{
-  color: #32026a;
+  color: rgb(85, 58, 204);
   font-weight: bold;
   font-size: 12px;
 }

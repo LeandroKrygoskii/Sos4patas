@@ -1,0 +1,153 @@
+.siteFooter
+{
+  background-color:#4db2e4;
+  padding:15px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  bottom:  0;
+  width: 100vw;
+  z-index: 1;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+ 
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.siteFooter hr
+{
+  border-top-color:#333;
+  opacity:0.5
+}
+.siteFooter hr.small
+{
+  margin:20px 0
+}
+.siteFooter h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.siteFooter a
+{
+  color:#3333;
+}
+.siteFooter a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footerLinks
+{
+  padding-left:0;
+  list-style:none
+}
+.footerLinks li
+{
+  display:block
+}
+.footerLinks a
+{
+  color:#444;
+}
+.footerLinks a:active,.footerLinks a:focus,.footerLinks a:hover
+{
+  color:#f34c71;
+  text-decoration:none;
+}
+.footerLinks.inline li
+{
+  display:inline-block
+}
+.siteFooter .socialIcons
+{
+  text-align:left;
+  display: flex;
+}
+.siteFooter .socialIcons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+
+  margin-right:0;
+  border-radius:100%;
+  background-color:#0AA9FB
+}
+.copyrightText
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .siteFooter [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .siteFooter
+  {
+    padding-bottom:0
+  }
+  .siteFooter .copyright-text,.siteFooter .social-icons
+  {
+    text-align:center
+  }
+}
+.socialIcons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.socialIcons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.socialIcons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.socialIcons a:active,.socialIcons a:focus,.socialIcons a:hover
+{
+  color:#fff;
+  background-color:#3091d1
+}
+
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}

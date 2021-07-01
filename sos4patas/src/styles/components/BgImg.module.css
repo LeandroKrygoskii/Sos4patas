@@ -10,26 +10,20 @@
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    width: 110%;
     height: 100%;
     overflow: hidden;
 }
 
-.bgImg::after{
-    content: '';
-    width: 100%;
-    height: 100%;
 
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-
-    background: linear-gradient(90deg, #10181A 13.67%, rgba(16, 24, 26, 0.8) 25.79%, rgba(16, 24, 26, 0.973927) 88.07%, #10181A 100%)
-}
 
 .bgImgStyle{
     width: 100%;
     
+}
+
+@media(max-width:780px){
+    .bgImg{
+        display: none;
+    }
 }

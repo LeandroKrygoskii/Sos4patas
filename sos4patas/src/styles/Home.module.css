@@ -1,25 +1,58 @@
 
 .container{ 
         width:100%;
-        height:80%;
+        height:100%;
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         
+}
+
+.containerMain{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+   
+}
+
+.imgDogContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+  
+}
+
+.imgdsit{
+ width: 100%;
+ transform: translate3d(0,60px,0);
 }
 
 .containerItem1{
     max-width: 576px;
     
     overflow: hidden;
-
+    margin-top: 90px;
+   
     
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-top: 70px;
+    align-items: center;
+   
 }
 
+.container1Title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: #f2f2f2;
+}
 
 
 .container1Content{
@@ -191,17 +224,81 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
 
+.line{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border: 0;
+    width: 90%;
+    border-radius: 50%;
+    border:1px solid #eeeeee;
+}
+
+.container2{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  
+    width: 100%;
+    
     
 }
 
+.titleContainer2{
+ color: #244D6E;
+ font-size: 40px;
+ margin-left: 10px;
+}
+
+.container2Row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.container3{
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+ 
+  width: 100%;
+  
+}
+
+.container3Title{
+    color: #244D6E ;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.container3Row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 @media (max-width:760px){
     .container{
-        
-        margin-left: 15px;
+        padding: 10px;
+      
+    }
+    .container1Title{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .containerMain{
+        flex-direction: column;
     }
     .container1Btns{
         flex-direction: column;
+    }
+    .container1Content{
+        max-width: 250px;
     }
     .btn{
         margin-right: 0px;
@@ -212,4 +309,5 @@
     .bgImg{
         display: none;
     }
+   
 }

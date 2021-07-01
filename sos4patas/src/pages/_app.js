@@ -6,6 +6,7 @@ import BgImgcomponents from '../components/BgImgComponent';
 import {AuthProvider} from '../context/Authcontext';
 
 import SideBar from '../components/SideBar';
+import Footer from '../components/Footer';
 
 //inicia o nprogess quando um evento de change route for disparado
 Router.events.on("routeChangeStart" , (url) =>{
@@ -32,6 +33,7 @@ function MyApp({ Component, pageProps }) {
       
       <Component {...pageProps}/>
       <BgImgcomponents/>
+      <Footer/>
    </AuthProvider>
   )
  

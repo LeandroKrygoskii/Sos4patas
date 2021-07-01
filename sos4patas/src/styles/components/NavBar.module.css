@@ -1,15 +1,14 @@
 .container{  
     padding-top: 15px;
-    
 }
 .navBar{
    padding: 0px 16px;
    max-width: 1440px;
-   padding-left: 75px;
    margin: 0 auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   margin-left: 100px;
    
    
 }
@@ -23,7 +22,7 @@
 .logo{
   max-width: 190px;
   overflow: hidden;
-  margin-left: 35px;
+  
 }
 
 .logo:hover{
