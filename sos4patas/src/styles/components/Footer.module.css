@@ -7,10 +7,17 @@
   color:#737373;
   bottom:  0;
   width: 100vw;
-  z-index: 1;
+  
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
  
+}
+
+@media(max-width:780px){
+  .siteFooter{
+    width: 110%;
+   
+  }
 }
 
 .row{

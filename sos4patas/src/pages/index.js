@@ -100,7 +100,7 @@ export default function Home() {
 
         <div className={styles.container3}>
             <hr className={styles.line}/>
-            <h1 className={styles.container3Title}>Porque apoiar o SOS 4 patas?</h1>
+            <h1 className={styles.container3Title}>Porque Ajudar?</h1>
             
         </div>
         <div className={styles.container3Row}>
@@ -111,12 +111,13 @@ export default function Home() {
             a animais de rua e aqueles pertencentes a famílias de baixa renda."
 
           />
-          <CardContainer3
-           icone="FiEdit2"
-           title="Promoção da ética e cidadania"
-           content="Promoção da ética e da cidadania, aproximando as pessoas físicas e jurídicas, leigos ou profissionais que possam oferecer aos animais, abandonados ou não, melhores condições de vida."
-          />
-
+          <div className={styles.divBotm}> 
+            <CardContainer3
+            icone="FiEdit2"
+            title="Promoção da ética e cidadania"
+            content="Promoção da ética e da cidadania, aproximando as pessoas físicas e jurídicas, leigos ou profissionais que possam oferecer aos animais, abandonados ou não, melhores condições de vida."
+            />
+          </div>
           <CardContainer3
            icone="BiLike"
            title="Com carinho e sem fins lucrativos"

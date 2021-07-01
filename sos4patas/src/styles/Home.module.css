@@ -7,6 +7,7 @@
         align-items: center;
         flex-direction: column;
         
+        
 }
 
 .containerMain{
@@ -20,14 +21,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
   
 }
 
 .imgdsit{
  width: 100%;
- transform: translate3d(0,60px,0);
+ transform: translate3d(0,40px,0);
 }
 
 .containerItem1{
@@ -237,10 +238,10 @@
 
 .container2{
     display: flex;
-    margin-top: 20px;
+    margin-top: 100px;
     flex-direction: column;
-    margin-bottom: 20px;
-  
+    
+    
     width: 100%;
     
     
@@ -265,8 +266,13 @@
   flex-direction: column;
   align-items: center;
  
+  text-align: center;
   width: 100%;
   
+}
+
+.divBotm{
+    
 }
 
 .container3Title{
@@ -278,14 +284,16 @@
 .container3Row{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
-@media (max-width:760px){
+@media (max-width:780px){
     .container{
         padding: 10px;
-      
+        margin-left:30px
     }
     .container1Title{
         font-size: 20px;
@@ -309,5 +317,15 @@
     .bgImg{
         display: none;
     }
-   
+    .container2Row{
+        flex-direction: column;
+    }
+
+    .container3Row{
+      flex-direction: column;
+    }
+    
+    .divBotm{
+        margin-bottom: 0;
+    }
 }
