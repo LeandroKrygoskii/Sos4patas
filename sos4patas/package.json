@@ -1,0 +1,30 @@
+{
+  "name": "sos4patas",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@iconfu/svg-inject": "^1.2.3",
+    "axios": "^0.21.1",
+    "cookies": "^0.8.0",
+    "next": "10.2.3",
+    "next-react-svg": "^1.1.2",
+    "nookies": "^2.5.2",
+    "nprogress": "^0.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.9.0",
+    "react-icons": "^4.2.0",
+    "react-modal": "^3.14.3",
+    "react-nextjs-toast": "^1.2.5",
+    "react-svg": "^13.0.6",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.9"
+  }
+}

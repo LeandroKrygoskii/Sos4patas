@@ -1,0 +1,66 @@
+.container {
+  
+  height: 100vh;
+  width: 100vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.main{
+  display: flex;
+  width: 380px;
+  text-align: center;
+  margin: 34px auto;
+  background: transparent;
+
+  border-radius: 20px;
+  padding: 64px 80px;
+  overflow: hidden;
+}
+
+.inputBlock input{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 29px;
+  padding: 0 16px;
+  background: #F5F8FA;
+  border: 1px solid #D3E2E5;
+  border-radius: 5px;
+  outline: none;
+  color: #5C8599;
+}
+
+.inputLabel {
+  font-size: 18px;
+  text-align: center;
+  color:#1eff8bf3;
+}
+
+.confirmButtonDiv{
+ 
+  display: flex;
+ 
+}
+
+.confirmButton{
+  width: 100%;
+  height: 35px;
+  cursor: pointer;
+  border:0;
+  background: #3CDC8C;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 5px;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+  
+  transition: background-color 0.2s;
+}
+
+.confirmButton:hover{
+  background-color: #36CF82;
+}

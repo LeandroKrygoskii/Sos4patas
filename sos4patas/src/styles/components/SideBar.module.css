@@ -1,0 +1,39 @@
+.asideArea{
+    position: fixed;
+    height:100%;
+    padding: 32px 24px;
+    background-color: transparent;
+   
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.imgHeader{
+    width:98px;
+}
+
+.btn{
+    width:48px;
+    height:48px;
+   
+    border:0;
+    border-radius:15px;
+   
+    background: #12AFCB;
+    cursor:pointer;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 720px){
+    .asideArea{
+        display: none;
+    }
+}
