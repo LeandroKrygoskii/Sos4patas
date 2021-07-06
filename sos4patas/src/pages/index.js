@@ -1,4 +1,4 @@
-
+import React, {useEffect, useState} from 'react';
 import NavBarComponent from '../components/NavBarComponent';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
@@ -8,10 +8,17 @@ import CardComponent from '../components/CardDonationComponent';
 import Footer from '../components/Footer';
 import CardContainer3 from '../components/CardContainer3Home';
 
+
 export default function Home() {
+
+  
+
+     
+
   return (
   <>
     <Head><title>Sos 4 patas Campo Largo</title></Head>
+    
     
     <div className={styles.container}>
 
@@ -41,8 +48,8 @@ export default function Home() {
                   <Link href="/adote">  
                      <a className={styles.btn}>ADOTAR</a>
                   </Link>
-
-                  <Link href="/help">
+                  
+                  <Link href="/donation">
                      <a className={styles.btn2}>AJUDAR</a>
                   </Link>
                 </div>
@@ -124,7 +131,7 @@ export default function Home() {
            content="A organização conta com verbas adquiridas por doações, eventos e bazares constituídos das doações recebidas."
           />
         </div>
-      
+        <Footer/>
     </div>
   </>
    

@@ -5,10 +5,12 @@
    }
    
    .cardContainer3Title{
-     
+     color: #244D6E;
+     font-size: 24px;
    }
    .cardContainer3Content{
-    color: #fff;
+    color: #1a75bf;
+    font-weight: 600;
    }
    
    .cardContainer3AllContent{
@@ -21,11 +23,11 @@
        display: flex;
        height: 80px;
        width: 90px;
-       background-color: #EE9A11;
+       background-color: #F8687B;
        border-radius: 50%;
    }
    .imgCardContainer3:hover{
-       background-color: rgb(235, 59, 59);
+       background-color: #EE9A11;
        transition: 0.7s ease;
    }
    .icone{

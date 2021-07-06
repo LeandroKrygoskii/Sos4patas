@@ -6,14 +6,16 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
+       
+      
         
 }
 
 .containerMain{
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
+    margin-top: 70px;
+    
    
 }
 
@@ -24,11 +26,12 @@
   height: 600px;
   width: 600px;
   
+  
 }
 
 .imgdsit{
  width: 100%;
- transform: translate3d(0,40px,0);
+
 }
 
 .containerItem1{
@@ -238,7 +241,7 @@
 
 .container2{
     display: flex;
-    margin-top: 100px;
+    margin-top: 10px;
     flex-direction: column;
     
     
@@ -293,7 +296,7 @@
 @media (max-width:780px){
     .container{
         padding: 10px;
-        margin-left:30px
+        padding-left: 190px;
     }
     .container1Title{
         font-size: 20px;
@@ -301,6 +304,9 @@
     }
     .containerMain{
         flex-direction: column;
+    }
+    .imgDogContainer{
+        padding-left: 50px;
     }
     .container1Btns{
         flex-direction: column;

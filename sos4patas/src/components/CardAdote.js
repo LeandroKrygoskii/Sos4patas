@@ -7,11 +7,10 @@ import Link from 'next/link';
 export default function components({data}) {
 
 
-  function checkGenero(){
+  function checkGenero(sexo){
     
-    const gen = data.sexo;
-    console.log('genero ' + data.sexo)
-    if(gen === 'Macho'){
+    
+    if(sexo === 'Macho'){
       return(
         <img className={styles.imgGen} src="/generos/male.png"/>
       )
@@ -22,9 +21,9 @@ export default function components({data}) {
     }
   };
 
-  function checkPorte(){
+  function checkPorte(porte){
      
-    const porte = data.porte;
+    
     if(porte === 'Pequeno'){
       return(
         <div style={{display:'flex', flexDirection:'row', marginLeft:30, marginTop:20}}>
@@ -56,33 +55,35 @@ export default function components({data}) {
 
 
  return (
-  
-   
-   <Link href={`/adotelist/${data.id}`}>
-     <div  className={styles.container}>
-      
-      <img className={styles.image} src={data.images[0].url}/>
+  <>
+   {data.map(data => (
+          <Link href={`/adotelist/${data.id}`}>
+          <div key={data.id}  className={styles.container}>
+          
+          <img className={styles.image} src={data.images[0].url}/>
 
-     <div className={styles.content}>
-        <h4 className={styles.nameTitle}> {data.name} </h4>
-     </div> 
-      
-    <div className={styles.row}>
+          <div className={styles.content}>
+            <h4 className={styles.nameTitle}> {data.name} </h4>
+          </div> 
+          
+        <div className={styles.row}>
 
-       <div className={styles.genero}>
-          { checkGenero() }
+            <div className={styles.genero}>
+              { checkGenero(data.sexo) }
+            </div>
+            
+            <div className={styles.porte}>
+              { checkPorte(data.porte)} 
+            </div>
+                
+            
         </div>
         
-        <div className={styles.porte}>
-          { checkPorte()} 
-        </div>
-           
-       
-    </div>
-    
 
-    </div>
-   </Link>
+        </div>
+        </Link>
+   ))}
   
+  </>
  );
 }

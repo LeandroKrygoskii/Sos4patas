@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/components/NavBar.module.css';
 import Link from 'next/link';
     
 
 
-export default function components() {
+export default function Components({black}) {
+     
+  const [open, setOpen] = useState(false);
+
+    function openMenu(){
+       
+      setOpen(!open);
+
+    }
+  
  return (
-  <header className={styles.container}>
+  <header className={[ black ? styles.blackContainer : styles.container]}>
       <nav className={styles.navBar}>
           <div className={styles.navMenu}>
 
@@ -16,8 +25,11 @@ export default function components() {
                   <img className={styles.imgLogo} src='/logodog.svg' />
                 </Link>      
               </div>
-
-              <ul className={styles.navList}>
+              <div onClick={openMenu} className={styles.hamburger} >
+                      <img src='/btnMenu.svg'/>
+               </div>   
+              <ul className={[open ? styles.navListActive : styles.navList]}>
+               
                 <li className={styles.navLink}>
                     <Link href="/">
                       <a className={styles.textLink}>Home</a>
@@ -30,7 +42,7 @@ export default function components() {
                 </li>
                 <li className={styles.navLink}>
                     <Link href="/donation">
-                      <a className={styles.textLink}>Faça sua doação</a>
+                      <a className={styles.textLink}>Contato</a>
                     </Link>
                     
                 </li>
@@ -52,9 +64,7 @@ export default function components() {
                       
               </div>
 
-                <div className={styles.hamburger} >
-                      <img src='/btnMenu.svg'/>
-                </div>   
+                
           </div>
       </nav>
 

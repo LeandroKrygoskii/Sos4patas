@@ -47,7 +47,11 @@ export default function adote(){
 
            <div className={styles.header}>
                 <h1 className={styles.title}>Quase lá 😃</h1>
-                    
+                <h2 style={{color: '#1a75bf'}}>Para adotar você pode ligar para (041)98729-2170</h2>
+                <h4 style={{color: '#1a75bf'}}>Ou mandar um email diretamente para: sos4patasadocoes@gmail.com</h4>
+                <br/>
+                <br/>
+                <h5 className={styles.subTitle}>Se preferir</h5>    
                 <h3 className={styles.subTitle}>Preencha o formulário e alguêm da equipe irá entrar em contato</h3>
             </div>    
             

@@ -26,12 +26,14 @@ export default function components() {
             </ul>
           </div>
           <div className="col-md-8 col-sm-6 col-xs-12">
-            <p style={{color:'#444'}} className="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
-            <a style={{color:"#000", fontWeight:700}} href="#"> Sos 4 patas Campo Largo</a>.
-            </p>
-            <p style={{color:'#444'}}>desenvolvido por 
-            <a  style={{color:"#000", fontWeight:700}} href="#"> KryTech</a>.
-            </p>
+            <div className={styles.divText}>
+              <p style={{color:'#f2f2f2'}} className="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+              <a style={{color:"#000", fontWeight:700}} href="#"> Sos 4 patas Campo Largo</a>.
+              </p>
+              <p style={{color:'#f2f2f2'}}>desenvolvido por 
+              <a  style={{color:"#000", fontWeight:700}} href="#"> KryTech</a>.
+              </p>
+            </div>
           </div>
           <div className="col-md-4 col-sm-6 col-xs-12">
             <ul className={styles.socialIcons}>

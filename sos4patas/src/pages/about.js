@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/About.module.css';
 
+
 export default function pages() {
  return (
    <div className={styles.container}>
@@ -17,7 +18,7 @@ export default function pages() {
          <div className={styles.hideen}>
            <img className={styles.imageHideen} src="/logodog.png"/>
           </div>
-       
+          
 
          <div className={styles.divContent}>
            <p className={styles.content}>

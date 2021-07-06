@@ -19,6 +19,7 @@
     "react-dom": "17.0.2",
     "react-hook-form": "^7.9.0",
     "react-icons": "^4.2.0",
+    "react-js-pagination": "^3.0.3",
     "react-modal": "^3.14.3",
     "react-nextjs-toast": "^1.2.5",
     "react-svg": "^13.0.6",

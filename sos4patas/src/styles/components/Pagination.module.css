@@ -1,0 +1,22 @@
+.pagination{
+    display: flex;
+    list-style:  none;
+}
+
+.pageLink{
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  font-size: 17px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  
+}
+
+.pageLink:focus{
+    background-color: #10b334;
+    color: #fff;
+}
