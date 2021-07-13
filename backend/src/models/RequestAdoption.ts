@@ -15,4 +15,7 @@ export default class RequestAdoption{
     @Column()
     telefone: string;
 
+    @Column()
+    idAnimal: number;
+
 }

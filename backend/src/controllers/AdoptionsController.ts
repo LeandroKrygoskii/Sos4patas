@@ -1,7 +1,6 @@
 import {Request, Response} from 'express';
 import { getRepository } from 'typeorm';
 import Adoption from '../models/Adoption';
-import RequestAdoption from '../models/RequestAdoption';
 import AdoptionView from '../views/AdoptionViews';
 import * as Yup from 'yup';
 

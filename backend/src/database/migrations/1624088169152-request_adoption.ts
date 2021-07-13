@@ -28,6 +28,10 @@ export class requestAdoption1624088169152 implements MigrationInterface {
                    name: 'telefone',
                    type: 'varchar'
                },
+               {
+                name: 'idAnimal',
+                type: 'integer'
+               },
             ],
 
         }))
