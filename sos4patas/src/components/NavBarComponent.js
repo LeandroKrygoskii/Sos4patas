@@ -47,6 +47,12 @@ export default function Components({black}) {
                     
                 </li>
                 <li className={styles.navLink}>
+                    <Link href="/denuncias">
+                      <a className={styles.textLink}>Denuncias</a>
+                    </Link>
+                    
+                </li>
+                <li className={styles.navLink}>
                     <Link href="https://www.instagram.com/explore/tags/adote/">
                       <a className={styles.textLink} style={{color: 'rgb(10, 213, 248)'}}>#Adote</a>
                     </Link>

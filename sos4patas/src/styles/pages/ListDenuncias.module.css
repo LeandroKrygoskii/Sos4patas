@@ -1,0 +1,19 @@
+.container{
+ display: flex;
+ height: 100vh;
+ width: 1000px;
+ flex-direction: column;
+ 
+}
+
+.containerItem{
+    width: 70%;
+    height: 80%;
+    background-color: #f2f2f2;
+    padding: 16px 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+}
+
+

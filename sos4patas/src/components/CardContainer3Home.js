@@ -11,17 +11,17 @@ export default function Components(props) {
 
         if(icone === "FaHeart"){
             return(
-                <FaHeart className={styles.icone} size={40} />
+                <FaHeart className={styles.icone} size={30} />
             )
         }
         if(icone === "FiEdit2"){
             return(
-                <FiEdit2 className={styles.icone} size={40}/>
+                <FiEdit2 className={styles.icone} size={30}/>
             )
         }
         if(icone === "BiLike"){
             return(
-                <BiLike className={styles.icone} size={40}/>
+                <BiLike className={styles.icone} size={30}/>
             )
         }
     }

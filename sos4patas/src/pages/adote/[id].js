@@ -4,7 +4,7 @@ import api from '../../services/api';
 import Link from 'next/link';
 import { useRouter } from "next/router";
 
-export default function adote(){
+export default function adote({test}){
      
     const router = useRouter();
 
@@ -12,7 +12,7 @@ export default function adote(){
     const [email, setEmail] = useState('');
     const [telefone, setTelefone] = useState('');
 
-
+   
 
 
 
@@ -26,7 +26,7 @@ export default function adote(){
             data.append('name' , name);
             data.append('email', email);
             data.append('telefone', telefone);
-    
+            data.append('idAnimal', test)
             await api.post('/req_adoption' , data)
     
             
@@ -105,4 +105,33 @@ export default function adote(){
         </div>
     )
 
+}
+
+export async function getStaticProps({ params }){
+    const test = params.id;
+
+    
+    return {
+      props: {
+        test
+      }
+    }
+  }
+
+
+export async function getStaticPaths(){
+  
+ const animals = await api.get(`/adoption`);
+  
+
+  const paths = animals.data.map((animal) => ({ //pra cada animal na resposta, um caminho sera gerado  
+      params: {
+        id: animal.id.toString(), //necessario usar o toString porque não aceita inteiro como caminho (path)
+      },
+  }));
+    
+   return {
+      paths,
+      fallback: false,
+    };
 }

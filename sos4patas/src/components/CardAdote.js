@@ -57,8 +57,8 @@ export default function components({data}) {
  return (
   <>
    {data.map(data => (
-          <Link href={`/adotelist/${data.id}`}>
-          <div key={data.id}  className={styles.container}>
+          <Link key={data.id}  href={`/adotelist/${data.id}`}>
+          <div  className={styles.container}>
           
           <img className={styles.image} src={data.images[0].url}/>
 

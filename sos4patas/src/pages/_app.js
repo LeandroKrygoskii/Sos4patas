@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
   const { pathname } = router;
   const noNav = ['/sign', '/dashboard', '/newAdoption', '/listAdoption', '/listDenuncias', '/listRequestAdoption']
   const admBar = ['/newAdoption', '/listAdoption', '/listDenuncias', '/listRequestAdoption']
-  const noBgImg = ['/adote', '/adote/[id]'];
+  const noBgImg = ['/adote', '/adote/[id]', '/denuncias'];
 
 
   const [blackHeader , setBlackHeader] = useState();

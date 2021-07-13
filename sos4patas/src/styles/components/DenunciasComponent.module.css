@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    border: 1px solid #3d3a3a;
+    
+    padding: 2px 12px;
+    border-radius: 10px;
+    
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.title{
+  font-weight: bold;
+  color: rgb(162, 0, 177);
+}
+
+.text{
+ font-size: 12px;
+ color: #004370;
+ 
+}

@@ -4,6 +4,8 @@ import { parseCookies } from 'nookies';
 import styles from '../styles/pages/DashBoard.module.css';
 import AdmComponent from '../components/AdmOptions';
 import Link from 'next/link';
+import {BsFileEarmarkDiff, BsListOl ,BsEyeFill} from 'react-icons/bs'
+import {SiDatadog} from 'react-icons/si';
 
 export default function pages() {
  return (
@@ -15,26 +17,30 @@ export default function pages() {
          <div className={styles.row}>
            
           <Link href="/newAdoption">
-            <div className={styles.item}>
+            <div style={{backgroundColor: '#0696E5'}} className={styles.item}>
+              <BsFileEarmarkDiff size={30} color={'#fff'}/>
               <h5 className={styles.itemTitle}>Nova Adoção</h5>
             </div>
            </Link>
 
            <Link href="/listAdoption">
-              <div className={styles.item}>
-              <h5 className={styles.itemTitle}>Listar Todas as Adoções Cadastradas</h5>
+              <div style={{backgroundColor: '#EBC529'}} className={styles.item}>
+              <BsListOl size={30} color={'#fff'}/>
+              <h5 className={styles.itemTitle}>Adoções Cadastradas</h5>
               </div>
            </Link>
 
            <Link href="/listDenuncias">
-            <div className={styles.item}>
-                <h5 className={styles.itemTitle}>Ver denuncias de Maus tratos</h5>
+            <div style={{backgroundColor:'#F8687B'}} className={styles.item}>
+            <BsEyeFill size={30} color={'#fff'}/>
+                <h5 className={styles.itemTitle}>Ver denuncias</h5>
             </div>
            </Link>
            
            <Link href="/listRequestAdoption">
-            <div className={styles.item}>
-              <h5 className={styles.itemTitle}>Listar Pedidos de Adoção</h5>
+            <div  style={{backgroundColor:'#00c275'}} className={styles.item}>
+              <SiDatadog size={30} color={'#fff'}/>
+              <h5 className={styles.itemTitle}>Pedidos de Adoção</h5>
             </div>
            </Link>
          </div> 

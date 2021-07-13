@@ -22,7 +22,7 @@ export default function components({data}) {
       )
     }
   };
-     
+      
    
   
 
@@ -87,22 +87,19 @@ export default function components({data}) {
       <img className={styles.image} src={data.images[0].url}/>
 
      <div className={styles.content}>
-         
-            <h4 className={styles.nameTitle}> {data.name} </h4>
-            
+     <h4 className={styles.nameTitle}> {data.name} </h4>
+     <div className={styles.row1}>
      
-        <div style={{display:'flex', flexDirection:'row'}}>
-            <Link href={`/editlist/${data.id}`}>
-             <FiEdit style={{color: '#40ff5c' }}/>
-            </Link>
+        <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'space-between'}}>
            
-            <div onClick={deleteCard}>
-              <FiTrash2 style={{color: '#ff2448' , marginTop:10, marginLeft:10}}/>
-            </div>
+           <h6 className={styles.codigo}>codigo : {data.id}</h6>  
         </div>
-        
-     </div> 
-      
+
+        <div onClick={deleteCard}>
+              <FiTrash2 size={20} style={{color: '#ff2448' , marginTop:10}}/>
+            </div>
+        </div> 
+      </div>
     <div className={styles.row}>
 
       

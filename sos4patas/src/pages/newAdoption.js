@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../styles/pages/CadAdoption.module.css';
 import { FiPlus } from "react-icons/fi";
 import api from '../services/api';
 import Router from 'next/router';
+import { parseCookies } from 'nookies';
 
 export default function pages() {
+
    
   const [name , setName] = useState();
   const [sexo, setSexo] = useState();
@@ -173,4 +175,25 @@ export default function pages() {
       </main>
    </div>
  );
+}
+
+export const getServerSideProps = async (ctx) => {
+
+  const { ['nextauth.token']:token } = parseCookies(ctx);
+
+  if(!token){
+    return{
+      redirect:{
+        destination: '/sign',
+        permanent: false
+      }
+    }
+  }
+
+  return{
+    props:{
+      
+    }
+  }
+
 }
