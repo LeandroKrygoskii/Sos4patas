@@ -48,13 +48,13 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 
 ## 🤝 Exemplo de Uso
-1.Para começar Crie uma conta "/create_user" (você pode usar ferramentas como o insomnia para isso).
-1.Acesse `http://localhost:3000/dashboard` e faça login.
-1.Cadastre novas adoções.
+1.Para começar Crie uma conta "/create_user" (você pode usar ferramentas como o insomnia para isso).<br>
+2.Acesse `http://localhost:3000/dashboard` e faça login.<br>
+3.Cadastre novas adoções.
 
 
-## 📫 Contribuindo para <nome_do_projeto>
-Para contribuir com <nome_do_projeto>, siga estas etapas:
+## 📫 Contribuindo para sos4patas
+Para contribuir com sos4patas, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
