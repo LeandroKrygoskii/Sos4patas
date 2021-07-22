@@ -27,28 +27,30 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 1. Acesse novamente a pasta *backend* e dê o comando `yarn dev`
 1. Se tudo ocorreu bem o servidor estará rodando em `http://localhost:3333`
 
+```
+ ###☕ Rotas (BackEnd) ###
+ 1. /create_user - adm (POST)
+ 2. /auth - autentificação (GET)
+ 3. /create_adoption - cria uma nova adoção (POST)
+ 4. /adoption - lista todas as adoçoes cadastradas (GET)
+ 5. /adoption/:id - list a adoção pelo id (GET)
+ 6. /adoption/:id - Deleta a adoção pelo id (DELETE)
+ 7. /denuncias - Cadastra uma nova denúncia (POST)
+ 8. /denuncias - lista as denúncias Cadastradas (GET)
+ 
+```
+
 ### 🌐 Web
 1. Acesse o diretório e dê o comando `yarn`
 1. Acesse a pasta *web* e dê o comando `yarn start`
 1. Acesse em seu navegador a seguinte url `http://localhost:3000`
 
 
-```
- ###☕ Rotas (BackEnd) ###
- 1. /create_user - adm (POST)
- 1. /auth - autentificação (GET)
- 1. /create_adoption - cria uma nova adoção (POST)
- 1. /adoption - lista todas as adoçoes cadastradas (GET)
- 1. /adoption/:id - list a adoção pelo id (GET)
- 1. /adoption/:id - Deleta a adoção pelo id (DELETE)
- 1. /denuncias - Cadastra uma nova denúncia (POST)
- 1. /denuncias - lista as denúncias Cadastradas (GET)
- 
-```
-<exemplo_de_uso>
+
+## 🤝 Exemplo de Uso
 1.Para começar Crie uma conta "/create_user" (você pode usar ferramentas como o insomnia para isso).
-2.Acesse `http://localhost:3000/dashboard` e faça login.
-3.Cadastre novas adoções.
+1.Acesse `http://localhost:3000/dashboard` e faça login.
+1.Cadastre novas adoções.
 
 
 ## 📫 Contribuindo para <nome_do_projeto>
@@ -61,8 +63,6 @@ Para contribuir com <nome_do_projeto>, siga estas etapas:
 5. Crie a solicitação de pull.
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-## 🤝 Colaboradores
 
 
 ## 📝 Licença
