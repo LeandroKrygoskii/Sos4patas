@@ -3,6 +3,7 @@
 > Projeto sendo desenvolvido para uma ong da minha cidade. Que cuida de adoções, tratamento e denúncias de animais em estado de abandono.
 ### Ajustes e melhorias
 
+
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Página de Denúncias
@@ -10,6 +11,18 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] DashBoard(adm)
 - [ ] Manipular Denúncias(adm)
 - [ ] Design Responsivo
+
+
+## 🌐 Tecnologias Usadas
+As principais tecnologias usadas:
+
+- [React](https://pt-br.reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Node.js](https://nodejs.org/en/)
+- [Typescript](https://www.typescriptlang.org/)
+- [SQLite](https://www.sqlite.org/index.html)
+- [Yarn](https://yarnpkg.com/)
+- [Expo](https://expo.io/)
 
 ## 💻 Pré-requisitos
 
