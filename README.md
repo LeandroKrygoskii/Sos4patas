@@ -15,13 +15,12 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Tenha instalado o Yarn em seu computador
-* Tenha instalado o NodeJs na versão >= 12.0
-* Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
+* Tenha instalado o NodeJs na versão >= 12.0.
 
 ## ***</>*** Como usar o código?
 1. Instale o **Yarn** em seu computador
 1. Instale o **NodeJs** na versão >= 12.0
-1. Clone este repositório `git clone https://github.com/pedrohenriquebraga/nlw3.git`
+1. Clone este repositório `https://github.com/LeandroKrygoskii/Sos4patas.git`
 
 ### ⚙️ Backend
 1. Acesse a pasta *backend* e dê o comando `yarn`
