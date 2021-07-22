@@ -67,4 +67,3 @@ Como alternativa, consulte a documentação do GitHub em [como criar uma solicit
 
 
 
-[⬆ Voltar ao topo](#Sos4patas)<br>
