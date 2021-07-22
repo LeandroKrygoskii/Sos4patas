@@ -97,8 +97,8 @@ export default function Home() {
 
           <CardComponent
              img="/dogs/11.png"
-             type="CLÍNICA"
-             title="Doe para cuidados"
+             type="DENUNCIE"
+             title="Maus Tratos"
              content="gaze, esparadrapo, algodão, álcool, produtos de limpeza."
              color="#EBC529"
              typeColor="#EBC529"
